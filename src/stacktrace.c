@@ -103,9 +103,9 @@ bool heap_is_safe(heap_t *h) { //dummy
 	return true;
 }
 
-#define Dump_registers()						\
-    jmp_buf env;								\
-    if (setjmp(env)) abort();					\
+#define Dump_registers()						
+    jmp_buf env;								
+    if (setjmp(env)) abort();					
 
 void *stack_find_bottom() {
 	void *bottom = environ;
@@ -203,7 +203,7 @@ size_t h_gc(heap_t *h) {
 	Dump_registers();
 	void *bottom = stack_find_bottom();
 	void *current = stack_find_top();
-	if (heap_is_safe(h)) { //SAFE
+	if (heap_is_safe(h)) { 
 		while(current != NULL) {
 			current = stack_trace(h, current, bottom);
 			if (current==NULL) {
@@ -219,7 +219,6 @@ size_t h_gc(heap_t *h) {
 			}
 		}
 	}
-	//UNSAFE
 	list_t *l = gc_list(h); 
     iter_t *it;
     for (it = iter(l); !iter_done(it); iter_next(it))
