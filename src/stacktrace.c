@@ -5,9 +5,6 @@
 extern char **environ;
 
 
-
-//taget från johans-inlupp2
-
 typedef struct _node_t node_t;
 typedef struct _list_t list_t;
 typedef struct _iter_t iter_t;
@@ -98,9 +95,6 @@ void list_add(list_t *l, void *elt)
         }
 }
 
-//johans inlupp2 uppåt 
-
-
 size_t h_used(heap_t *h){ //dummy
 	return 1;
 }
@@ -145,7 +139,6 @@ void* stack_trace(heap_t *h, void *current, void *bottom) {
 	return NULL;
 }
 
-//TODO botten>topp vilken ska va current?
 
 
 list_t* gc_list(heap_t *h) {
