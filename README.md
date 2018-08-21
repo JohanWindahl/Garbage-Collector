@@ -3,7 +3,7 @@ Project in course: Imperative and Object-Oriented Programming Methodology - 1DL2
 
 **Language: C**
 
-**Details** A garbage collector was created, including a new heap, new objectformats and a main stacktrace.
+**Details** A garbage collector was created, including a new heap, custom object formats and a main stacktrace.
 
 # IOOP/M Björnen
 
