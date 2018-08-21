@@ -1,4 +1,4 @@
-#Garbage-Collector#
+# Garbage-Collector #
 Project in course: Imperative and Object-Oriented Programming Methodology - 1DL221
 
 **Language: C**
