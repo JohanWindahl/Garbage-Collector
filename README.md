@@ -1,3 +1,10 @@
+#Garbage-Collector#
+Project in course: Imperative and Object-Oriented Programming Methodology - 1DL221
+
+**Language: C**
+
+**Details** A garbage collector was created, including a new heap, new objectformats and a main stacktrace.
+
 # IOOP/M Björnen
 
 ## Folders
